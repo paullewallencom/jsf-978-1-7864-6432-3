@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Core JavaServer Faces</title>
+    </h:head>   
+    <h:body>     
+        <strong>Application name: c1_s5_v5.3_1</strong>
+        <hr/>Passing and getting parameters<hr/>
+        
+        FIRST, PRESS THIS TO INITIALIZE THE SESSION BEAN:
+         <h:form>        
+             Name: <h:inputText value="#{playersBean.playerName}"/>
+             Surname: <h:inputText value="#{playersBean.playerSurname}"/>
+             <h:commandButton value="Set player name and surname" action="index"/>            
+        </h:form>
+        <br/>
+        SECOND, PRESS THIS TO FIND THE SESSION BEAN IN THE REQUEST BEAN:
+        <h:form>                        
+            <h:commandButton value="View Profile In Log" action="#{profileBean.viewProfile()}"/>            
+        </h:form>
+    </h:body>
+</html>
+

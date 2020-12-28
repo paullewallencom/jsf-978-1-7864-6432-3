@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Core JavaServer Faces</title>
+    </h:head>   
+    <h:body>
+        <strong>Application name: c1_s3_v3.3_1</strong>
+        <hr/>Passing attributes via the <code>&lt;f:attribute/&gt;</code><hr/> 
+        
+         <h:form>
+             Click to send name, 'Rafael' surname, 'Nadal', with <code>&lt;f:attribute&gt;</code>:
+            <h:commandButton actionListener="#{playersBean.parametersAction}">
+                <f:attribute name="value" value="Send Rafael Nadal" />	                	
+                <f:attribute id="playerName" name="playerNameAttr" value="Rafael"/>               
+                <f:attribute id="playerSurname" name="playerSurnameAttr" value="Nadal"/>               
+            </h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+
